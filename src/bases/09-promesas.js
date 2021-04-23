@@ -1,4 +1,4 @@
-import {getHeroeById} from './bases/08-import-export'
+import {getHeroeById} from '../bases/08-import-export';
 
 // const promesa = new Promise( (resolve, reject) => {
 
@@ -19,7 +19,7 @@ import {getHeroeById} from './bases/08-import-export'
 // })
 // .catch( err => console.warn(err));
 
-const getHeroeByIdAsync = (id) => {
+export const getHeroeByIdAsync = (id) => {
 
     return new Promise( (resolve, reject) => {
 
@@ -31,13 +31,13 @@ const getHeroeByIdAsync = (id) => {
                 resolve(heroe);
             else
                 reject('No se pudo encontrar el Heroe');
-        }, 2000);
+        }, 1500);
     
     });
 }
 
-getHeroeByIdAsync(4)
-                    .then( console.log )
-                    .catch( console.warn );
+// getHeroeByIdAsync(4)
+//                     .then( console.log )
+//                     .catch( console.warn );
 
 

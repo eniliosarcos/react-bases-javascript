@@ -13,19 +13,12 @@ const saludar3 = (nombre) =>  `Hola ${nombre}`;
 
 const saludar4 = () =>  `Hola mundo`;
 
-// console.log(saludar('Enilio'));
-// console.log(saludar);
-console.log(saludar2('enilio'));
-console.log(saludar3('enilio!!'));
-console.log(saludar4());
 
-const getUser = () => ({
+export const getUser = () => ({
     uid: 'ABC123',
     username: 'El_Papi1502'
 });
 
-const user = getUser();
-console.log(user);
 
 //tarea
 //1. transformen a una funcion de flecha
@@ -42,10 +35,10 @@ console.log(user);
 // console.log(usuarioActivo);
 
 //Solucion
-const getUsuarioActivo = (nombre) => ({
+export const getUsuarioActivo = (nombre) => ({
     uid: 'abc567',
     username: nombre
 });
 
-const usuarioActivo = getUsuarioActivo('enilio');
-console.log(usuarioActivo);
+// const usuarioActivo = getUsuarioActivo('enilio');
+// console.log(usuarioActivo);
